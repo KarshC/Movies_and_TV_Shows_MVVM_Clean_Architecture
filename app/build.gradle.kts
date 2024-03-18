@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -16,6 +18,11 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        // Get the API keys from local.properties
+        val properties = Properties()
+        properties.load(project.rootProject.file("local.properties").inputStream())
+        buildConfigField("String", "TMDB_API_KEY", properties.getProperty("TMDB_API_KEY"))
     }
 
     buildTypes {
@@ -37,6 +44,7 @@ android {
 
     buildFeatures {
         dataBinding = true
+        buildConfig = true
     }
 }
 
