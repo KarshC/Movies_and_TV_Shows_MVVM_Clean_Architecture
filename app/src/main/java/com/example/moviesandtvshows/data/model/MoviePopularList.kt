@@ -1,13 +1,13 @@
-package com.example.moviesandtvshows.data
+package com.example.moviesandtvshows.data.model
 
 
 import com.google.gson.annotations.SerializedName
 
-data class TvPopularList(
+data class MoviePopularList(
     @SerializedName("page")
     val page: Int,
-    @SerializedName("TVS")
-    val tvShowList: List<TvShow>,
+    @SerializedName("movies")
+    val movieList: List<Movie>,
     @SerializedName("total_pages")
     val totalPages: Int,
     @SerializedName("total_results")

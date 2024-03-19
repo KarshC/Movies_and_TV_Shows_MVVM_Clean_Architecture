@@ -1,8 +1,8 @@
 package com.example.moviesandtvshows.data.api
 
-import com.example.moviesandtvshows.data.MoviePopularList
-import com.example.moviesandtvshows.data.PeoplePopularList
-import com.example.moviesandtvshows.data.TvPopularList
+import com.example.moviesandtvshows.data.model.MoviePopularList
+import com.example.moviesandtvshows.data.model.PeoplePopularList
+import com.example.moviesandtvshows.data.model.TvPopularList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
