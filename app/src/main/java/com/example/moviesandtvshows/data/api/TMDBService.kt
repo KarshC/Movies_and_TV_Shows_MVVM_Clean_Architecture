@@ -1,8 +1,8 @@
 package com.example.moviesandtvshows.data.api
 
-import com.example.moviesandtvshows.data.model.MoviePopularList
-import com.example.moviesandtvshows.data.model.PeoplePopularList
-import com.example.moviesandtvshows.data.model.TvPopularList
+import com.example.moviesandtvshows.data.model.movie.MoviePopularList
+import com.example.moviesandtvshows.data.model.artist.ArtistPopularList
+import com.example.moviesandtvshows.data.model.tvshow.TvPopularList
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -19,5 +19,5 @@ interface TMDBService {
     suspend fun getPopularTvShows(@Query("api_key") apiKey: String): Response<TvPopularList>
 
     @GET("person/popular")
-    suspend fun getPopularPeople(@Query("api_key") apiKey: String): Response<PeoplePopularList>
+    suspend fun getPopularPeople(@Query("api_key") apiKey: String): Response<ArtistPopularList>
 }

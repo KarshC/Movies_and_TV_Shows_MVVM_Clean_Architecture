@@ -1,9 +1,9 @@
-package com.example.moviesandtvshows.data.model
+package com.example.moviesandtvshows.data.model.artist
 
 
 import com.google.gson.annotations.SerializedName
 
-data class People(
+data class Artist(
     @SerializedName("id")
     val id: Int,
     @SerializedName("known_for")

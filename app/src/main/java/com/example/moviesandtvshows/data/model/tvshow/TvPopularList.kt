@@ -1,4 +1,4 @@
-package com.example.moviesandtvshows.data.model
+package com.example.moviesandtvshows.data.model.tvshow
 
 
 import com.google.gson.annotations.SerializedName
