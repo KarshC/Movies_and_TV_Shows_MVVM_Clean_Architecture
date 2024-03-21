@@ -49,6 +49,7 @@ android {
 }
 
 dependencies {
+    implementation("androidx.activity:activity:1.8.0")
     val lifecycle_version = "2.7.0"
     val room_version = "2.6.1"
     val coroutine_version = "1.8.1-Beta"
@@ -84,7 +85,7 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version")
     //Dagger
     implementation("com.google.dagger:dagger:$dagger_version")
-    annotationProcessor("com.google.dagger:dagger-compiler:$dagger_version")
+    kapt("com.google.dagger:dagger-compiler:$dagger_version")
     //Retrofit
     implementation("com.squareup.retrofit2:retrofit:$retrofit_version")
     //Gson convertor for Retrofit
