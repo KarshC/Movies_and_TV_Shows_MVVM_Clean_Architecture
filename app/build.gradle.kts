@@ -23,6 +23,7 @@ android {
         val properties = Properties()
         properties.load(project.rootProject.file("local.properties").inputStream())
         buildConfigField("String", "TMDB_API_KEY", properties.getProperty("TMDB_API_KEY"))
+        buildConfigField("String", "TMDB_BASE_URL", "\"https://api.themoviedb.org/3/\"")
     }
 
     buildTypes {
