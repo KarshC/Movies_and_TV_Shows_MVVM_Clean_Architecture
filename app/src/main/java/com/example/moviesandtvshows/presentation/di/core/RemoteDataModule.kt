@@ -7,9 +7,11 @@ import com.example.moviesandtvshows.data.repository.movie.datasource.MovieRemote
 import com.example.moviesandtvshows.data.repository.movie.datasourceimpl.MovieRemoteDataSourceImpl
 import com.example.moviesandtvshows.data.repository.tvshow.datasource.TvShowRemoteDataSource
 import com.example.moviesandtvshows.data.repository.tvshow.datasourceimpl.TvShowRemoteDataSourceImpl
+import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
 
+@Module
 class RemoteDataModule(private val apiKey: String) {
 
     @Singleton
